@@ -1,33 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Task Tracker</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Personal Task Manager</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-  <div class="task-tracker">
-    <header>
-      <h1>Task Tracker</h1>
-      <button class="add-task-btn">+ Add Task</button>
-    </header>
-
-    <div class="task-list">
-      <div class="task-card">
-        <h3>Task Title</h3>
-        <p>Description of the task.</p>
-        <div class="task-footer">
-          <span class="task-priority">High</span>
-          <button class="task-btn">Complete</button>
-        </div>
-      </div>
-
-      <!-- Add more task cards here -->
-
+  <div class="container">
+    <h1>📝 Personal Task Manager</h1>
+    
+    <div class="task-input">
+      <input id="taskInput" type="text" placeholder="Add a new task..." />
+      <button onclick="addTask()">Add</button>
     </div>
+    
+    <ul id="taskList" class="task-list">
+      <!-- Tasks will appear here -->
+    </ul>
   </div>
 
+  <script src="script.js"></script>
 </body>
 </html>
+
